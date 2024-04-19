@@ -1,0 +1,163 @@
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light blue background color */
+}
+
+.admin-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #f7f7f7; /* Light gray background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 400px;
+  /* Add subtle gradient for a touch of dynamism (optional): */
+  background: linear-gradient(to bottom, #f7f7f7 0%, #ebebeb 100%);
+}
+
+.admin-login label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.admin-login input[type="password"],
+.admin-login input[type="text"] { /* Include username field */
+  width: 100%; /* Full-width input fields */
+  padding: 15px; /* Increased padding for comfort */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease;
+}
+
+.admin-login input[type="password"]:focus,
+.admin-login input[type="text"]:focus {
+  border-color: #c61e0f; /* Blue border on focus */
+}
+
+.admin-login button {
+  background-color: #c61e0f; /* Blue button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  font-weight: bold;
+}
+
+.admin-login button:hover {
+  background-color: #c61e0f; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight bounce on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+.dashboard {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px; /* Set maximum width for dashboard content */
+  background-color: #fff; /* White background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-form {
+  width: 100%;
+  max-width: 600px; /* Set maximum width for profile form */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Light gray background color for profile form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-form label,
+.profile-form input {
+  display: block;
+  width: calc(100% - 20px); /* Adjusted width with proper spacing */
+  margin-bottom: 20px;
+}
+
+.profile-form input:focus {
+  border-color: #c61e0f; /* Purple border color on focus */
+}
+
+.profile-form button {
+  background-color: #c61e0f; /* Purple background color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px; /* Increased padding for better button appearance */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px; /* Increase font size for better readability */
+  font-family: 'Arial', sans-serif; /* Change font family */
+  font-weight: bold;
+}
+
+.profile-form button:hover {
+  background-color: #c61e0f; /* Darker purple on hover */
+}
+
+.profile-form textarea {
+  width: calc(100% - 20px); /* Adjusted width with proper spacing */
+  padding: 15px; /* Increased padding for comfort */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease;
+}
+
+.profile-form textarea:focus {
+  border-color: #c61e0f; /* Purple border color on focus */
+}
+
+.profile-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+}
+
+.profile-card {
+  padding: 20px;
+  border: 2px solid #c61e0f;
+  border-radius: 10px; /* Adjust border radius as needed */
+  overflow: hidden;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Adjust padding as needed */
+  width: 200px; /* Set the width of the profile card */
+}
+
+.profile-card h4 {
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  margin-bottom: 20px;
+}
+
+.profile-card img {
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  border-radius: 10px; /* Match border radius with the profile card */
+}
+
+.profile-card button:hover {
+  background-color: #c61e0f; /* Darker purple on hover */
+}
